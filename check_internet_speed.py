@@ -36,5 +36,6 @@ if __name__ == '__main__':
         try: 
             internet_speed()
         except KeyboardInterrupt:
+            on = False
             break
             print('Internet speed check interrupted!')

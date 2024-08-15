@@ -24,9 +24,9 @@ def internet_speed():
     upload_speed = speed_test.upload() / 1000000
     end = time.time()
     sec = end - start
-    print("Your Download speed is", download_speed)
-    print("Your Upload speed is", upload_speed)
-    print("Time spent (s):", sec)
+    #print("Your Download speed is", download_speed)
+    #print("Your Upload speed is", upload_speed)
+    #print("Time spent (s):", sec)
     with open('internet_speed.txt','a') as f:
         f.write(str(sec) + ',' + str(download_speed) + ',' + str(upload_speed) + '\n')
 

@@ -18,8 +18,8 @@ def animate(i):
     try:
         data = np.loadtxt('internet_speed.txt',delimiter=',')
         ax.clear()
-        ax.plot(data[:,0], data[:,1],label='Download')
-        ax.plot(data[:,0], data[:,2],label='Upload')
+        ax.plot(data[:,0], data[:,1],label='Download',marker='o',)
+        ax.plot(data[:,0], data[:,2],label='Upload',marker='o',)
         ax.set_xlabel('Time (s)')
         ax.set_ylabel('Speed (Mbps)')
         ax.legend(loc="upper right")

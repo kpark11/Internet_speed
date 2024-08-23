@@ -17,7 +17,6 @@ try:
 except OSError:
     pass
 
-
 def internet_speed():
     speed_test = speedtest.Speedtest()
     download_speed = speed_test.download() / 1000000

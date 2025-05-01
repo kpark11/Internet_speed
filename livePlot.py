@@ -16,7 +16,7 @@ import matplotlib.animation as animation
 
 def animate(i):
     try:
-        data = np.loadtxt('internet_speed.txt',delimiter=',')
+        data = np.loadtxt('speed.txt',delimiter=',')
         ax.clear()
         ax.plot(data[:,0], data[:,1],label='Download',marker='o',)
         ax.plot(data[:,0], data[:,2],label='Upload',marker='o',)

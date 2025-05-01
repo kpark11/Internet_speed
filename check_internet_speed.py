@@ -13,7 +13,7 @@ import os
 start = time.time()
 # If the data file exists, delete, and start from the beginning. If there is none, pass.
 try:
-    os.remove('internet_speed.txt')
+    os.remove('speed.txt')
 except OSError:
     pass
 
@@ -26,7 +26,7 @@ def internet_speed():
     #print("Your Download speed is", download_speed)
     #print("Your Upload speed is", upload_speed)
     #print("Time spent (s):", sec)
-    with open('internet_speed.txt','a') as f:
+    with open('speed.txt','a') as f:
         f.write(str(sec) + ',' + str(download_speed) + ',' + str(upload_speed) + '\n')
 
 if __name__ == '__main__':
